@@ -1,6 +1,6 @@
 {
-  "name": "comp308-lesson3",
-  "description": "Express Demo via Express Generator for MVC (vertical site structure)",
+  "name": "comp308-express_portfolio-jason_pearson",
+  "description": "Assignment 1 - Express Portfolio - via Express Generator for MVC (vertical site structure)",
   "main": "server.js",
   "authors": [
     "Jason Pearson"
@@ -11,7 +11,7 @@
     "ExpressJS",
     "Heroku"
   ],
-  "homepage": "https://github.com/Jason-Pearson/comp308-lesson3",
+  "homepage": "https://github.com/Jason-Pearson/comp308-express-portfolio",
   "ignore": [
     "**/.*",
     "node_modules",

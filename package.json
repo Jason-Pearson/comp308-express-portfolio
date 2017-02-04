@@ -1,5 +1,5 @@
 {
-  "name": "comp308-lesson3",
+  "name": "comp308-express_portfolio-jason_pearson",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -18,11 +18,11 @@
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.2"
   },
-  "description": "Express Demo via Express Generator for MVC (vertical site structure)",
+  "description": "Assignment 1 - Express Portfolio - via Express Generator for MVC (vertical site structure)",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jason-Pearson/comp308-lesson3.git"
+    "url": "git+https://github.com/Jason-Pearson/comp308-express-portfolio.git"
   },
   "keywords": [
     "NodeJS",
@@ -32,7 +32,8 @@
   "author": "Jason Pearson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Jason-Pearson/comp308-lesson3/issues"
+    "url": "https://github.com/Jason-Pearson/comp308-express-portfolio/issues"
   },
-  "homepage": "https://github.com/Jason-Pearson/comp308-lesson3#readme"
+  "homepage": "https://github.com/Jason-Pearson/comp308-express-portfolio#readme",
+  "devDependencies": {}
 }

@@ -5,7 +5,7 @@
  */
 
 var app = require('./app');
-var debug = require('debug')('comp308-lesson3:server');
+var debug = require('debug')('comp308-express_portfolio-jason_pearson:server');
 var http = require('http');
 
 /**
