@@ -1,5 +1,7 @@
 let express = require('express');
 let router = express.Router();
+let mongoose = require('mongoose');
+let game = require('../config/games'); // create game object - reps document in games collection
 
 /* GET home page. */
 router.get('/', (req, res, next) =>{
@@ -13,10 +15,17 @@ router.get('/', (req, res, next) =>{
 /* GET about page. Extra route using about.ejs View*/
 router.get('/about', (req, res, next) =>{
     let currentDate = new Date();//local variable for Callback Function
+ // game.find((err, games) => {
+   //  if (err) {
+     //  return console.error(err);
+     //}
+     //else {
   res.render('content/about', { 
     title: 'About',
-date: `${currentDate.getMonth()}, ${currentDate.getDay()}, ${currentDate.getFullYear()} (MM,DD,YYYY) -- ${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()} (HH:MM:SS)`
- }); //Render about.ejs view, ref. title/date - pass in 'About' and time, etc
+    date: `${currentDate.getMonth()}, ${currentDate.getDay()}, ${currentDate.getFullYear()} (MM,DD,YYYY) -- ${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()} (HH:MM:SS)`
+    //,games: games
+}); //Render about.ejs view, ref. title/date - pass in 'About' and time, etc
+     //}
 });
 
 router.get('/projects', (req, res, next) =>{

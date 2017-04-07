@@ -9,7 +9,8 @@
   "keywords": [
     "NodeJS",
     "ExpressJS",
-    "Heroku"
+    "Heroku",
+    "EJS"
   ],
   "homepage": "https://github.com/Jason-Pearson/comp308-express-portfolio",
   "ignore": [

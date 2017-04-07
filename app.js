@@ -6,6 +6,24 @@ let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
 
+ // adding the mongoose module
+ let mongoose = require("mongoose");
+ // connect to mongoDB and use the games database
+ 
+ //let URI = "mongodb://localhost/videogames";
+ // Mongoose URI
+ let URI = "mongodb://jason:pearson12@ds060369.mlab.com:60369/games"
+ 
+ mongoose.connect(URI, (err) => {
+   if(err) {
+     console.log("Error connecting to the database");
+   }
+   else {
+     console.log("Connected to MongoDB");
+   }
+ });
+ 
+
 let index = require('./routes/index'); //index (object) for routing to index.html
 
 let app = express();
