@@ -11,7 +11,7 @@ let index = require('./routes/index'); //index (object) for routing to index.htm
 let app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views')); //join 'views' folder with the file-system path
+app.set('content', path.join(__dirname, 'views/content/')); //join 'views' folder with the file-system path
 app.set('view engine', 'ejs'); //specify view engine, currently using ejs, can use pug/jade/etc
 
 // uncomment after placing your favicon in /public
