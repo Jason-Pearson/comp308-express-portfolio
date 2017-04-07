@@ -14,15 +14,21 @@ let bodyParser = require('body-parser');
  // Mongoose URI
  let URI = "mongodb://jason:pearson12@ds060369.mlab.com:60369/games"
  
- mongoose.connect(URI, (err) => {
+ /*mongoose.connect(URI, (err) => {
    if(err) {
      console.log("Error connecting to the database");
    }
    else {
      console.log("Connected to MongoDB");
    }
- });
+ });*/
+ mongoose.connect(URI);
  
+ let db = mongoose.connection;
+ db.on('error', console.error.bind(console, 'connection error:'));
+ db.once('open', () => {
+   console.log("Conneced to MongoDB...");
+ });
 
 let index = require('./routes/index'); //index (object) for routing to index.html
 
