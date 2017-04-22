@@ -49,7 +49,7 @@ let games = require('./routes/games'); // routes for games
 let app = express();
 
 // view engine setup
-app.set('content', path.join(__dirname, 'views/content')); //join 'views' folder with the file-system path
+app.set('content', path.join(__dirname, 'views/content/')); //join 'views' folder with the file-system path
 app.set('view engine', 'ejs'); //specify view engine, currently using ejs, can use pug/jade/etc
 
 // uncomment after placing your favicon in /public
