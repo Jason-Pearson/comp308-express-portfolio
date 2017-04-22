@@ -1,1 +1,1 @@
-//custom JS file
+/* custom JS goes here */
