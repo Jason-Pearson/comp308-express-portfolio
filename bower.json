@@ -15,7 +15,6 @@
   "homepage": "https://github.com/Jason-Pearson/comp308-express-portfolio",
   "ignore": [
     "**/.*",
-    "node_modules",
     "bower_components",
     "public/Scripts/lib",
     "test",
