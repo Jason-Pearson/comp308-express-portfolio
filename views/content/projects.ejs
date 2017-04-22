@@ -4,7 +4,109 @@
     <div class="row">
       <div class="col-md-offset-3 col-md-6">   
         <h1><%= title %></h1>
-        <p>Welcome to <%= title %></p>
+        <p>Here are some Projects I have been involved with.</p>
+
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false"
+                aria-controls="collapseOne"> Previously Worked On - Archives</a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <a href="https://github.com/COMP305-Sec2-GameProject/Winns_Bizzare_Adventure"><h4>Winn's Bizarre Adventure</h4></a>
+                <li>Platformer, Side-Scroller</li>
+                <li>Made via Unity Engine, C# Scripts, used MapleStory™ sprite assets under Fair Use</li>
+                <li>Used GIMP2 for image-processing on sprites and maps</li>
+            
+            <a href="https://github.com/COMP397-Final-Project/COMP397_FinalProject_Jason_Faim"><h4>Voyage of Outlaws</h4></a>
+                <li>Side-Scroller</li>
+                <li>Made via JavaScript/Typescript, various NodeJS packages (CreateJS, jQuery, etc.)</li>
+                <li>Ran on a lightweight server (IIS-Express) via Visual Studio ‘13</li>
+                <br>
+                <a href="https://github.com/Jason-Pearson?tab=repositories"><h2><ul>~ <u>Git Repos</u></ul></h2></a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                Recently Worked On - This Year
+                </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+           <a href="https://github.com/SonarBoy/sonarPing"><h4>Sonar Ping</h4></a>
+                <li>Security System/3D Room Scanner</li>
+                <li>Enter your info into our database, arm the sensor, then when someone trips the sensor the webcam takes a
+                photo and instantly sends it to your email and Google Drive. Secondly, the Proximity Sensor 
+                attached to a small rotor rotates on its x-axis to get approximate coordinates to form the dimensions of a room, 
+                and then those points are extracted and ran through a script to produce cloud points into Blender to 3D model the room.</li>
+                <li>Made via Java/Eclipse, various JAR libraries (OpenCV, Javax.Mail, etc.), Blender (for 3D Modeling)</li>
+                <li>Equipment Used: Trip Sensor, Webcam, Arduino Board, Proximity Sensor, PC (Windows 10)</li>
+                
+                <a href="https://github.com/822937603/COMP395-Jim-No-Frills"><h4>Jim's No-Frills</h4></a>
+                <li>The Ultimate Shopping Line Simulator</li>
+                <li>Made via Unity Engine, C# Scripts</li>
+                <li>Control a series of toggles to see how hectic or organized shoppers can be between checkout lines, and of course, inspect the patience one must endure for shoppers to checkout <b>all</b> their items.</li>
+                
+                </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                Currently Working On
+                </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+                <a href="https://github.com/Jason-Pearson/comp308-express-portfolio/tree/master"><h3>This Website!</h3></a>
+                <a href="https://comp308-a1-jason-pearson.herokuapp.com/"><h4>~Heroku Deployment~</h4></a>
+                <li>Jason Pearson's Portfolio</li>
+                <li>Made via HTML/JavaScipt/NPM, Node and Bower Packages, used VSCode, structured under MVC</li>
+                <li>Used mLab/Mongoose for Mongo Database connection for Games Database/Registration Info via mLab Collections</li>
+                <li>Used Passport/Connect-Flash and other Packages for Login Authentification</li>
+                <li>Used Express for Local Hosting</li>
+                <li>And so much more!</li>
+                <details><summary>Here is a quick list of <b>Dependencies</b> for this project</summary>
+                <br><b>Node Dependencies</b>
+                <br>"body-parser": "~1.16.0",
+                <br>"cookie-parser": "~1.4.3",
+                <br>"debug": "~2.6.0",
+                <br>"ejs": "~2.5.5",
+                <br>"express": "~4.14.1",
+                <br>"mongoose": "^4.8.1",
+                <br>"morgan": "~1.7.0",
+                <br>"passport": "^0.3.2",
+                <br>"passport-local": "^1.0.0",
+                <br>"passport-local-mongoose": "^4.0.0",
+                <br>"connect-flash": "^0.1.1",
+                <br>"serve-favicon": "~2.3.2"
+                <br><b>Bower Dependencies</b>
+                <br>"jquery": "2.2.4",
+                <br>"bootstrap": "^3.3.7",
+                <br>"font-awesome": "^4.7.0"
+                <br>
+                <br><b>This isn't even all of it...see the "node_modules" folder in the github link for more.</b>
+                </details>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+
       </div>
     </div>
   </div>
