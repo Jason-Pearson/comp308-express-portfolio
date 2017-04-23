@@ -3,16 +3,15 @@
     <!-- MAIN CONTENT -->
     <div class="container">
       <div class="row">
-        <div class="col-md-offset-3 col-md-6">
-          <h3>Games List </h3>
-          <a href="/games/add" class="btn btn-primary"><i class="fa fa-plus"></i> Add a Game</a>
-          <a href="/logout" class="btn btn-primary"><i class="fa fa-sign-out"></i> Logout</a>
+        <div class="col-md-offset-1 col-md-9">
+          <h3>Business Contacts List</h3>
+          <a href="/games/add" class="btn btn-primary"><i class="fa fa-plus"></i> Add Contact</a>
           <br>
           <table class="table table-bordered table-striped table-hover">
             <tr>
               <th class="text-center">Name</th>
-              <th class="text-center">Cost</th>
-              <th class="text-center">Rating</th>
+              <th class="text-center">Phone</th>
+              <th class="text-center">Email</th>
               <th class="text-center"></th>
               <th class="text-center"></th>
             </tr>
@@ -20,8 +19,8 @@
             <% for (let count = 0; count < games.length; count++) { %>
             <tr>
               <td class="text-center"><%= games[count].name %></td>
-              <td class="text-center"><%= games[count].cost %></td>
-              <td class="text-center"><%= games[count].rating %></td>
+              <td class="text-center"><%= games[count].phone %></td>
+              <td class="text-center"><%= games[count].email %></td>
               <td class="text-center">
               <a href="/games/<%= games[count]._id %>" class="btn btn-primary">
               <i class="fa fa-pencil-square-o"></i> Edit</a>

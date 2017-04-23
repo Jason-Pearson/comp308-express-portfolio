@@ -4,11 +4,11 @@
  // create a model class
  let gamesSchema = mongoose.Schema({
      name: String,
-     rating: Number,
-     cost: Number
+     phone: String,
+     email: String
  },
  {
-   collection: "games"
+   collection: "contacts"
  });
  
- module.exports = mongoose.model('games', gamesSchema);
+ module.exports = mongoose.model('contacts', gamesSchema);

@@ -65,6 +65,24 @@ router.get('/contact', (req, res, next) =>{
 }); //Render about.ejs view, ref. title/date - pass in 'About' and time, etc
 });
 
+router.post('/contact', (req, res, next) => {
+
+    let newGame = game({
+      "name": req.body.name,
+      "phone": req.body.phone,
+      "email": req.body.email
+    });
+
+    game.create(newGame, (err, game) => {
+      if(err) {
+        console.log(err);
+        res.end(err);
+      } else {
+        res.redirect('/contact');
+      }
+    });
+});
+
 // GET /Login - render the Login view
 router.get('/login', (req, res, next) => {
 	// Check to see if the user is not already logged index
