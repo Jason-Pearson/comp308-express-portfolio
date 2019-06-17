@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "body-parser": "^1.16.0",
+    "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
     "debug": "^2.6.0",
     "ejs": "^2.5.5",
@@ -20,8 +21,7 @@
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^4.0.0",
-    "connect-flash": "^0.1.1",
-    "serve-favicon": "~2.3.2"
+    "serve-favicon": "^2.5.0"
   },
   "description": "Assignment 1 - Express Portfolio - via Express Generator for MVC (vertical site structure)",
   "main": "server.js",
@@ -39,5 +39,8 @@
   "bugs": {
     "url": "https://github.com/Jason-Pearson/comp308-express-portfolio/issues"
   },
-  "homepage": "https://github.com/Jason-Pearson/comp308-express-portfolio#readme"
+  "homepage": "https://github.com/Jason-Pearson/comp308-express-portfolio#readme",
+  "devDependencies": {
+    "jekyll": "^3.0.0-beta1"
+  }
 }
